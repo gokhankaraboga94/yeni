@@ -1,0 +1,28 @@
+dealer
+Sidenav: Müşteri paneli, Faturalar, Fiyat listesi, Mağaza, Eskiyi Getir, Ekspertiz. Bayi paneli yok. 170 kaydında Transfer sekmesi; kayıt başına tek bekleyen istek.
+
+Admin
+Kuyrukta «Bayi panele taşı» → 162 kaynak groupKey’de açılır. Faturalar/Kazanç o gruptadır. Admin paneldeki Dealer kovası yalnızca görünüm; satırda gönderen yazılır. Müşteriler kategorisiyle birleşmez.
+
+sub_dealer
+Diagnostik / post-repair / onarım isteği yok. «Üst bayiye bildir».
+
+central_distributor + semi_admin
+Kuyruk kendi bayi panelinin tepesinde. GSX alt grubun fiyat profili ve rol ekiyle açılır; mend gibi doğrudan gider. Semi-admin kademe kırpımı Kazanç’ta durur.
+
+Cüzdan
+Gruplar izole. Üst/alt birbirinin bakiyesini harcayamaz. Vekâleten düşüm walletGroupKey üzerindendir. wallet_prepaid kasaya girmez.
+
+
+dealer + payment = yeni elaman 
+central_distributor + semi_admin = erhan
+danisman = semi adminin teknisyensiz rolü sadece raporlar
+sub_dealer = mert göbel
+danisman = selim
+
+
+danisman + dealer(payment) = selim+yeni elaman
+sub_dealer(payment) + central_distributor(semi-admin) mert gobel+erhan
+
+dealer test edildi istke admine gidiyor bağlantılarda sadece transfer sidenav okey. onarım oluşunca danismana komisyon test edilecek
+
